@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff9fb, #fbeaf0);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #765565;
+}
+
+.container {
+    width: 100%;
+    padding: 22px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f1d5df;
+    box-shadow: 0 3px 15px rgba(180, 120, 145, 0.08);
+}
+
+.div1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #c17d99;
+}
+
+.container2 {
+    min-height: 85vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff5f8, #f9e3eb);
+}
+
+.container_formulario {
+    width: 440px;
+    min-height: 430px;
+    padding: 45px 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #f3d5e0;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(180, 120, 145, 0.15);
+}
+
+.container_formulario form {
+    width: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 17px;
+    background: #fff9fb;
+    color: #765565;
+    border: 1px solid #ebc9d6;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #b895a3;
+}
+
+input:focus {
+    background: #ffffff;
+    border-color: #d38ba6;
+    box-shadow: 0 0 0 3px rgba(211, 139, 166, 0.13);
+}
+
+button,
+#botao,
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 16px;
+    background: #d995ad;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+#botao:hover,
+input[type="submit"]:hover {
+    background: #c77e99;
+    box-shadow: 0 6px 18px rgba(199, 126, 153, 0.25);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 500px) {
+    .container_formulario {
+        width: 100%;
+        padding: 30px 22px;
+        margin: 0;
+    }
+
+    .div1 {
+        font-size: 24px;
+    }
+}
